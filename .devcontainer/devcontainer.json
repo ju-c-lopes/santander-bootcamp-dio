@@ -1,0 +1,20 @@
+{
+  "name": "Java Dev Env",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "java.home": "/usr/local/openjdk-24"
+  },
+  "extensions": [
+    "vscjava.vscode-java-pack",          // Java extensions
+    "pivotal.vscode-spring-boot",        // Spring Boot (se usar)
+    "redhat.vscode-xml",                 // XML (pom.xml etc.)
+    "editorconfig.editorconfig"
+  ],
+  "mounts": [
+    "source=${localWorkspaceFolder},target=/workspace,type=bind"
+  ],
+  "workspaceFolder": "/workspace"
+}

@@ -6,29 +6,33 @@ Projeto API RESTful com Java e Spring
 ```mermaid
 classDiagram
     class User {
-        +String name
+        -String name
+        -Account account
+        -Card card
+        -Feature[] features
+        -News[] news
     }
 
     class Account {
-        +String number
-        +String agency
-        +double balance
-        +double limit
+        -String number
+        -String agency
+        -BigDecimal balance
+        -BigDecimal limit
     }
 
     class Card {
-        +String number
-        +double limit
+        -String number
+        -BigDecimal limit
     }
 
     class Feature {
-        +String icon
-        +String description
+        -String icon
+        -String description
     }
 
     class News {
-        +String icon
-        +String description
+        -String icon
+        -String description
     }
 
     User "1" *-- "1" Account : possui
