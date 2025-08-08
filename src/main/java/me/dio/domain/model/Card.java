@@ -1,5 +1,7 @@
 package me.dio.domain.model;
 
+import java.math.BigDecimal;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -31,10 +33,10 @@ public class Card {
     public void setNumber(String number) {
         this.number = number;
     }
-    public String getLimit() {
+    public BigDecimal getLimit() {
         return limit;
     }
-    public void setLimit(String limit) {
+    public void setLimit(BigDecimal limit) {
         this.limit = limit;
     }
 }
