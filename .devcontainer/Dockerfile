@@ -10,7 +10,7 @@ RUN apk update && \
 #    adduser -D -G appuser appuser
 
 # Stage 2: Final application stage with OpenJDK 24
-FROM openjdk:24-jdk-slim
+FROM openjdk:21-jdk-slim
 
 # Set working directory
 WORKDIR /app

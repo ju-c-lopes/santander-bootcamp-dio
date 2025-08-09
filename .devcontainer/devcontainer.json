@@ -5,7 +5,7 @@
   },
   "settings": {
     "terminal.integrated.defaultProfile.linux": "bash",
-    "java.home": "/usr/local/openjdk-24"
+    "java.home": "/usr/local/openjdk-21"
   },
   "extensions": [
     "vscjava.vscode-java-pack",          // Java extensions
