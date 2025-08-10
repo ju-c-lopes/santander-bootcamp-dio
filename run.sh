@@ -1,6 +1,6 @@
 #!/bin/bash
 
 apt update
-apt install net-tools
+apt install -y net-tools
 ifconfig
 ./gradlew - bootRun
